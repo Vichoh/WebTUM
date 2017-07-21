@@ -1,0 +1,44 @@
+/* toolbar Menu bar*/
+
+#toolbar{
+
+	background-color: #64B5F6;
+
+
+}
+.md-menu-toolbar button {
+
+	color: white;
+	
+
+}
+
+.md-menu-toolbar button:hover {
+
+	background-color: #1976D2;
+	
+}
+
+.md-menu-toolbar md-menu-bar md-menu-divider {
+
+	color: white;
+}
+
+.md-menu-toolbar md-toolbar-filler {
+
+	background-color: #64B5F6;
+	background: #64B5F6;
+}
+
+
+
+/*-----------------------------------------------------------------------*/
+
+.cardSPUV md-card-title {
+	background-color: #64B5F6;
+}
+
+.cardSPUV span{
+	color: white;
+}
+

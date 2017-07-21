@@ -1,0 +1,21 @@
+<div layout-padding layout-margin layout="column" layout-align="space-between center" ng-if="vm.location === 'bar'" style="background-color: white">
+	<div flex-gt-xs>
+		<form ng-submit="vm.enviarForm(vm.fecha)">
+			<md-datepicker name="fecha" ng-model="vm.fecha" ></md-datepicker>
+      		<md-button type="submit" md-no-ink class="md-primary" >Buscar</md-button>
+		</form>
+     	
+    </div>
+	<canvas id="bar" class="chart chart-bar" chart-colors="vm.colors" chart-options="vm.options"
+	  chart-data="vm.data" chart-labels="vm.labels" ng-if="vm.location === 'bar'">
+	</canvas>
+</div>
+	
+
+<div layout-padding layout-margin style="background-color: white" layout="column" layout-align="space-between center" ng-if="vm.location === 'line'" ng-init="vm.posts()">
+	
+	<canvas id="line"  class="chart chart-line" chart-data="vm.data" chart-labels="vm.labels" chart-options="vm.options" chart-dataset-override="vm.datasetOverride" >
+	</canvas>
+	
+	
+</div>

@@ -1,0 +1,110 @@
+ <md-toolbar class="md-menu-toolbar" id="toolbar">
+    <div layout="row" layout-align="none" layout-xs="column">
+      <a href="/" layout layout-align="center center" flex-gt-xs="20" flex="100"  layout="column">
+          <img  ng-src="../app/img/new-logo.png" alt="" flex="50" flex-gt-sm="50">
+
+      </a>
+      <div layout="column" flex-gt-xs="80" flex="80">
+        <img flex="10" flex-gt-xs="10" ng-src="../app/img/cielo.png" alt="">
+        <md-menu-bar flex="50">
+          <md-menu>
+            <button ng-click="$mdMenu.open()">
+              <span class="md-subhead">Indice UV</span>
+            </button>
+            <md-menu-content>
+              <md-menu-item>
+                <md-button ng-click="">
+                  Informacion
+                </md-button>
+              </md-menu-item>
+              <md-menu-divider></md-menu-divider>
+              <md-menu-item>
+                <md-menu>
+                  <md-button ng-click="$mdMenu.open()">Graficos</md-button>
+                  <md-menu-content>
+                    <md-menu-item><md-button ui-sref="diaUV">Por Dia</md-button></md-menu-item>
+                    <md-menu-item><md-button ui-sref="vivoUV">Tiempo real</md-button></md-menu-item>
+                    
+                  </md-menu-content>
+                </md-menu>
+              </md-menu-item> 
+            </md-menu-content>
+          </md-menu>
+          <md-menu-divider>|</md-menu-divider> 
+
+          <md-menu>
+            <button ng-click="$mdMenu.open()">
+              <span class="md-subhead">Temperatura </span>
+            </button>
+            <md-menu-content>
+              <md-menu-item>
+                <md-button ng-click="">
+                  Informacion
+                </md-button>
+              </md-menu-item>
+              <md-menu-divider></md-menu-divider>
+              <md-menu-item>
+                <md-menu>
+                  <md-button ng-click="$mdMenu.open()">Graficos</md-button>
+                  <md-menu-content>
+                    <md-menu-item><md-button ui-sref="barTemperatura">Por dia</md-button></md-menu-item>
+                    <md-menu-item><md-button ui-sref="lineTemperatura">Tiempo Real</md-button></md-menu-item>
+                    
+                  </md-menu-content>
+                </md-menu>
+              </md-menu-item> 
+            </md-menu-content>
+          </md-menu>
+          <md-menu-divider>|</md-menu-divider> 
+
+          <md-menu>
+            <button ng-click="$mdMenu.open()">
+              <span class="md-subhead">Monoxido </span>
+            </button>
+            <md-menu-content>
+              <md-menu-item>
+                <md-button ng-click="">
+                  Informacion
+                </md-button>
+              </md-menu-item>
+              <md-menu-divider></md-menu-divider>
+              <md-menu-item>
+                <md-menu>
+                  <md-button ng-click="$mdMenu.open()">Graficos</md-button>
+                  <md-menu-content>
+                    <md-menu-item><md-button ui-sref="diaMonoxido">Por dia</md-button></md-menu-item>
+                    <md-menu-item><md-button ui-sref="vivoMonoxido">Tiempo real</md-button></md-menu-item>
+                    
+                  </md-menu-content>
+                </md-menu>
+              </md-menu-item>           
+            </md-menu-content>
+          </md-menu>
+          <md-menu-divider>|</md-menu-divider> 
+
+          <md-menu>
+            <button ng-click="$mdMenu.open()">
+              <span class="md-subhead">Sensores </span>
+            </button>
+            <md-menu-content>
+              <md-menu-item>
+                <md-button ng-click="">
+                  UV
+                </md-button>
+              </md-menu-item>
+              <md-menu-item>
+                <md-button ng-click="">
+                  Monoxido
+                </md-button>
+              </md-menu-item>
+              <md-menu-item>
+                <md-button ng-click="">
+                  Temperatura
+                </md-button>
+              </md-menu-item>
+            </md-menu-content>
+          </md-menu>
+        </md-menu-bar>
+      </div>
+    </div>
+  </md-toolbar>
