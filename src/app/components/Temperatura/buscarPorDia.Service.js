@@ -1,21 +1,17 @@
 (function () {
-	'use strict'
-	angular
-	.module('app')
-	.service('buscarPorDiaService', buscarPorDiaService);
+  'use strict'
 
-	buscarPorDiaService.$inject = ['$resource'];
+  angular
+  .module('app')
+  .service('buscarPorDiaService', buscarPorDiaService);
 
-	function buscarPorDiaService($resource){
+  buscarPorDiaService.$inject = ['$resource', 'API_CONST'];
 
-		return $resource('http://192.168.0.100:8888/Arduino/ProyectoTUM/public/api/datosDia/:fecha',{fecha: '@fecha'},{
-			get: {
-
-				isArray: true
-			}
-
-		});
-	}
-
-
+  function buscarPorDiaService($resource, API_CONST) {
+    return $resource(API_CONST.apiUrl + 'datosDia/:fecha', {fecha: '@fecha'}, {
+      get: {
+        isArray: true
+      }
+    });
+  }
 })();

@@ -6,7 +6,7 @@
 
 
 }
-.md-menu-toolbar button {
+#toolbar button {
 
 	color: white;
 	
@@ -17,6 +17,11 @@
 
 	background-color: #1976D2;
 	
+}
+
+md-menu-bar md-menu.md-open>button, md-menu-bar md-menu>button:focus{
+	/*coloooooor */
+	background-color: #1976D2; 
 }
 
 .md-menu-toolbar md-menu-bar md-menu-divider {
@@ -41,4 +46,62 @@
 .cardSPUV span{
 	color: white;
 }
+
+/*--------body----*/
+
+
+.bd_general {
+
+	background-image: url(app/img/fondo.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-attachment: fixed;
+	overflow: hidden;
+
+}
+
+body {
+
+}
+
+.principal {
+
+	overflow:  auto;
+
+
+}
+
+
+
+/*------Footer--*/
+
+.footer {
+
+	background: #64B5F6;
+}
+
+.footer md-divider {
+
+	background: #E3F2FD;
+
+}
+
+.footer-copy a {
+	
+		color: white;
+		padding: 22px 15px;
+
+}
+
+.avatar {
+
+	width: 60px;
+	height: 60px;
+	border-radius: 100px;
+}
+
+
+
+
+
 
